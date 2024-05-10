@@ -51,3 +51,14 @@ image.mount('img');
 
 let immagine = vue.createApp(aggiungiImage);
 immagine.mount("img");
+
+
+
+/* manco così
+const aggiungiImage = {
+    img(){
+        return
+        imgUrl: require('src="./cabin.png');
+    }
+}
+*/
