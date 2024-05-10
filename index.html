@@ -8,8 +8,9 @@
 <body>
     <!-- Testo da modificare -->
     <h1>{{ testoDaMettere }}</h1>
-    <img id="img" {{src}}>
-    <img src="./cabin.png" alt="">
+    <!-- <img id="img" {{src}}> Questo non funziona -->
+    <!-- <img src="./cabin.png" alt=""> -->
+    <img :src="{{imgUrl}}">
 
     <!-- script di vue -->
     <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
