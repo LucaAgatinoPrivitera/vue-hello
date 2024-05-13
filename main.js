@@ -14,6 +14,8 @@ const configurazione = {
         //La funzione restituisce un oggetto con tutti i dati
         return {
             testoDaMettere: 'Testo inserito con Vue :D',
+            // Bonus
+            imgUrl: "./cabin.png"
         }
     },
 };
@@ -30,35 +32,5 @@ const configurazione = {
 let app = Vue.createApp(configurazione);
 console.log("applicazione inizializzata ma non montata", app);
 
-app.mount('h1'); //funziona esattamente come il querySelector
+app.mount('#container'); //funziona esattamente come il querySelector
 console.log("Con questo monto e `applico app.mount('h1');`", app);
-
-
-// Bonus
-const aggiungiImage = {
-    img(){
-        return
-        imgUrl = 'src="./cabin.png'
-    }
-}
-
-let image = vue.createApp(aggiungiImage);
-// Così non funziona, penso che si debba usare :
-/*
-image.mount('#img');
-*/
-image.mount('img');
-
-let immagine = vue.createApp(aggiungiImage);
-immagine.mount("img");
-
-
-
-/* manco così
-const aggiungiImage = {
-    img(){
-        return
-        imgUrl: require('src="./cabin.png');
-    }
-}
-*/
